@@ -40,11 +40,11 @@ a:hover {
 
 // Header
 header {
-  @centered();
+  @centered-vertical();
   nav {
     width: 100%;
     padding: 2rem 9.3rem;
-    @centered();
+    @centered-vertical();
     justify-content: space-between;
     ul {
       margin: 0;
@@ -60,6 +60,22 @@ header {
 }
 
 // Footer
+footer {
+  @centered-horizontal();
+  padding: 3rem 0;
+  .footer-column {
+    min-width: 12rem;
+    padding: 3rem;
+    h3 {
+      font-size: 20px;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      color: #333;
+    }
+  }
+  // TODO: adjust for mobile devices
+}
 
 // Home
 
