@@ -2,11 +2,62 @@
 @import "mixin";
 
 // Shared styles
+body {
+  padding: 0;
+  margin: 0;
+  @font-bodoni-moda();
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
 h1, h2, h3, h4, h5, h6 {
   @font-abril-fatface();
 }
+a:hover {
+  color: @color-1;
+}
+
+// Bootstrap Overwrites
+.btn {
+  padding: .75rem;
+  font-size: 1.2rem;
+  border-radius: 0;
+  @font-bodoni-moda();
+}
+.btn-primary {
+  background-color: @color-1;
+  border-color: @color-1;
+  &:hover {
+    background-color: darken(hsl(@color-1), 10%);
+    border-color: darken(hsl(@color-1), 10%);
+  }
+}
 
 // Header
+header {
+  @centered();
+  nav {
+    width: 100%;
+    padding: 2rem 9.3rem;
+    @centered();
+    justify-content: space-between;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline;
+        padding-right: 4.6rem;
+        @font-abril-fatface();
+      }
+    }
+  }
+  // TODO: adjust for mobile devices
+}
 
 // Footer
 
