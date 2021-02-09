@@ -84,4 +84,20 @@ header nav ul li {
   padding-right: 4.6rem;
   font-family: 'Abril Fatface', cursive;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+footer .footer-column {
+  min-width: 12rem;
+  padding: 3rem;
+}
+footer .footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+footer .footer-column p {
+  color: #333;
+}
 /*# sourceMappingURL=main.css.map */
