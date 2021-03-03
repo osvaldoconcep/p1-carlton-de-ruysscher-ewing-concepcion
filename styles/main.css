@@ -42,13 +42,15 @@ a {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
   font-family: 'Abril Fatface', cursive;
 }
 h2 {
   font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.2rem;
 }
 a:hover {
   color: #4d3d80;
@@ -140,6 +142,46 @@ footer .footer-column p {
 .home-hero-image-top .hero-image-content .hero-image-heading {
   padding-bottom: 2rem;
 }
+.balance {
+  height: 500px;
+  text-align: center;
+}
+.balance h3 {
+  padding-top: 80px;
+}
+.balance .balance-images-container {
+  display: flex;
+  justify-content: center;
+}
+.balance .balance-images-container .balance-image {
+  padding: 3rem;
+}
+.balance .balance-images-container .balance-image img {
+  width: auto;
+  height: 175px;
+}
+.balance .balance-images-container .balance-image h4 {
+  padding-top: 20px;
+  font-size: 20px;
+}
+.home-content-container {
+  height: 700px;
+  display: flex;
+}
+.home-content-container .content-section {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+}
+.home-content-container .content-section .left-content {
+  width: 305px;
+  float: right;
+  padding-top: 100px;
+}
+.home-content-container .content-section .right-content img {
+  width: 400px;
+  height: auto;
+}
 .home-hero-image-bottom {
   background: url('../img/stones.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -180,6 +222,27 @@ footer .footer-column p {
 .massage-hero-image-top .hero-image-content .hero-image-heading {
   padding-bottom: 2rem;
 }
+.massage-content-container {
+  height: 700px;
+  display: flex;
+  padding-top: 60px;
+}
+.massage-content-container .content-section {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+}
+.massage-content-container .content-section .left-content {
+  float: right;
+}
+.massage-content-container .content-section .left-content img {
+  width: 400px;
+  height: auto;
+}
+.massage-content-container .content-section .right-content {
+  width: 305px;
+  padding-top: 40px;
+}
 .massage-hero-image-bottom {
   background: url('../img/massage-h.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -205,7 +268,7 @@ footer .footer-column p {
   margin: 0 0 16px 16px;
 }
 .stretch-hero-image-top {
-  background: url('../img/updog.jpg') no-repeat center center fixed;
+  background: url('../img/stretch-banner.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -226,6 +289,27 @@ footer .footer-column p {
 .stretch-hero-image-top .hero-image-content .hero-image-content-wrapper {
   text-align: right;
   width: 500px;
+}
+.stretch-content-container {
+  height: 700px;
+  display: flex;
+  padding-top: 60px;
+}
+.stretch-content-container .content-section {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+}
+.stretch-content-container .content-section .left-content {
+  float: right;
+}
+.stretch-content-container .content-section .left-content img {
+  width: 400px;
+  height: auto;
+}
+.stretch-content-container .content-section .right-content {
+  width: 500px;
+  padding-top: 40px;
 }
 .stretch-hero-image-bottom {
   background: url('../img/beach-small.jpg') no-repeat center center fixed;
