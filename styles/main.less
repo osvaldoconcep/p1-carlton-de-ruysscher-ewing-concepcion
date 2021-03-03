@@ -15,11 +15,14 @@ a {
 * {
   box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   @font-abril-fatface();
 }
 h2 {
   font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.2rem;
 }
 a:hover {
   color: @color-1;
@@ -103,7 +106,7 @@ footer {
 }
 
 // Home
-// Hero Images
+
 .home-hero-image-top {
   @height: 470px;
   .hero-image-base('../img/dock.jpg', @height);
@@ -116,6 +119,50 @@ footer {
     }
   }
 }
+
+.balance {
+  height: 500px;
+  text-align: center;
+  h3 {
+    padding-top: 80px;
+  }
+  .balance-images-container {
+    @centered-horizontal();
+    .balance-image {
+      padding: 3rem;
+      img {
+        width: auto;
+        height: 175px;
+      }
+      h4 {
+        padding-top: 20px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.home-content-container {
+  height: 700px;
+  display: flex;
+  .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    .left-content {
+      width: 305px;
+      float: right;
+      padding-top: 100px;
+    }
+    .right-content {
+      img {
+        width: 400px;
+        height: auto;
+      }
+    }
+  }
+}
+
 .home-hero-image-bottom {
   @height: 350px;
   .hero-image-base('../img/stones.jpg', @height);
@@ -132,7 +179,7 @@ footer {
 }
 
 // Massage
-// Hero Images
+
 .massage-hero-image-top {
   @height: 470px;
   .hero-image-base('../img/hands.jpg', @height);
@@ -143,6 +190,28 @@ footer {
     padding-left: 18.75rem;
     .hero-image-heading {
       padding-bottom: 2rem;
+    }
+  }
+}
+
+.massage-content-container {
+  height: 700px;
+  display: flex;
+  padding-top: 60px;
+  .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    .left-content {
+      img {
+        width: 400px;
+        height: auto;
+      }
+      float: right;
+    }
+    .right-content {
+      width: 305px;
+      padding-top: 40px;
     }
   }
 }
@@ -168,10 +237,10 @@ footer {
 }
 
 // Stretch
-// Hero Images
+
 .stretch-hero-image-top {
   @height: 470px;
-  .hero-image-base('../img/updog.jpg', @height);
+  .hero-image-base('../img/stretch-banner.jpg', @height);
   .hero-image-content {
     height: @height;
     @centered-vertical();
@@ -186,6 +255,29 @@ footer {
     }
   }
 }
+
+.stretch-content-container {
+  height: 700px;
+  display: flex;
+  padding-top: 60px;
+  .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    .left-content {
+      img {
+        width: 400px;
+        height: auto;
+      }
+      float: right;
+    }
+    .right-content {
+      width: 500px;
+      padding-top: 40px;
+    }
+  }
+}
+
 .stretch-hero-image-bottom {
   @height: 350px;
   .hero-image-base('../img/beach-small.jpg', @height);
@@ -207,7 +299,7 @@ footer {
 }
 
 // Facial
-// Hero Images
+
 .facial-hero-image-top {
   @height: 470px;
   .hero-image-base('../img/oil.jpg', @height);
@@ -220,6 +312,8 @@ footer {
     }
   }
 }
+
+
 .facial-hero-image-bottom {
   @height: 350px;
   .hero-image-base('../img/roller.jpg', @height);
