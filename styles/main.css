@@ -10,7 +10,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bodonimoda/v2/aFT67PxzY382XsXX63LUYL6GYFcan6NJrKp-VPjfJMShrpsGFUt8oZDdwIA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/bodonimoda/v4/aFT67PxzY382XsXX63LUYL6GYFcan6NJrKp-VPjfJMShrpsGFUt8oZDdwIA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Josefin Slab';
@@ -46,6 +46,9 @@ h4,
 h5,
 h6 {
   font-family: 'Abril Fatface', cursive;
+}
+h2 {
+  font-size: 2.5rem;
 }
 a:hover {
   color: #4d3d80;
@@ -84,6 +87,25 @@ header nav ul li {
   padding-right: 4.6rem;
   font-family: 'Abril Fatface', cursive;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:focus {
+  position: relative;
+  width: auto;
+  height: auto;
+  clip: initial;
+  margin: inherit;
+  padding: inherit;
+  border: initial;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -99,5 +121,176 @@ footer .footer-column h3 {
 }
 footer .footer-column p {
   color: #333;
+}
+.home-hero-image-top {
+  background: url('../img/dock.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 470px;
+  width: auto;
+}
+.home-hero-image-top .hero-image-content {
+  height: 470px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 9rem 18.75rem;
+}
+.home-hero-image-top .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.home-hero-image-bottom {
+  background: url('../img/stones.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  width: auto;
+}
+.home-hero-image-bottom .hero-image-content {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-hero-image-bottom .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.home-hero-image-bottom .hero-image-content .hero-image-content-wrapper {
+  text-align: center;
+}
+.massage-hero-image-top {
+  background: url('../img/hands.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 470px;
+  width: auto;
+}
+.massage-hero-image-top .hero-image-content {
+  color: white;
+  height: 470px;
+  display: flex;
+  align-items: center;
+  padding-left: 18.75rem;
+}
+.massage-hero-image-top .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.massage-hero-image-bottom {
+  background: url('../img/massage-h.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  width: auto;
+}
+.massage-hero-image-bottom .hero-image-content {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.massage-hero-image-bottom .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.massage-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul {
+  list-style-image: url('../img/check-mark.png');
+}
+.massage-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+  margin: 0 0 16px 16px;
+}
+.stretch-hero-image-top {
+  background: url('../img/updog.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 470px;
+  width: auto;
+}
+.stretch-hero-image-top .hero-image-content {
+  height: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 9rem 0 18.75rem;
+}
+.stretch-hero-image-top .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.stretch-hero-image-top .hero-image-content .hero-image-content-wrapper {
+  text-align: right;
+  width: 500px;
+}
+.stretch-hero-image-bottom {
+  background: url('../img/beach-small.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  width: auto;
+}
+.stretch-hero-image-bottom .hero-image-content {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stretch-hero-image-bottom .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.stretch-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul {
+  list-style-image: url('../img/check-mark.png');
+}
+.stretch-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+  margin: 0 0 16px 16px;
+}
+.facial-hero-image-top {
+  background: url('../img/oil.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 470px;
+  width: auto;
+}
+.facial-hero-image-top .hero-image-content {
+  height: 470px;
+  display: flex;
+  align-items: center;
+  padding-left: 18.75rem;
+}
+.facial-hero-image-top .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.facial-hero-image-bottom {
+  background: url('../img/roller.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  width: auto;
+}
+.facial-hero-image-bottom .hero-image-content {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facial-hero-image-bottom .hero-image-content .hero-image-heading {
+  padding-bottom: 2rem;
+}
+.facial-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul {
+  list-style-image: url('../img/check-mark.png');
+}
+.facial-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+  margin: 0 0 16px 16px;
 }
 /*# sourceMappingURL=main.css.map */
