@@ -57,6 +57,7 @@ a:hover {
 }
 .btn {
   padding: 0.75rem;
+  min-width: 150px;
   font-size: 1.2rem;
   border-radius: 0;
   font-family: 'Bodoni Moda', serif;
@@ -376,5 +377,45 @@ footer .footer-column p {
 }
 .facial-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
   margin: 0 0 16px 16px;
+}
+.appointment-hero-image-top {
+  background: url('../img/grassy-rocks.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  width: auto;
+  z-index: -1;
+}
+.needs-validation {
+  width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0.5px #aaa;
+  background-color: white;
+}
+.needs-validation .row .col {
+  padding: 40px 50px;
+}
+.needs-validation label {
+  padding-bottom: 20px;
+}
+.form-group {
+  padding: 40px;
+}
+.form-control {
+  border: 0;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+.submit-container,
+.appointment-form-container {
+  display: flex;
+  justify-content: center;
+}
+.appointment-form-container {
+  position: relative;
+  top: -250px;
 }
 /*# sourceMappingURL=main.css.map */

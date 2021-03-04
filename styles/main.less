@@ -31,6 +31,7 @@ a:hover {
 // Bootstrap Overwrites
 .btn {
   padding: .75rem;
+  min-width: 150px;
   font-size: 1.2rem;
   border-radius: 0;
   @font-bodoni-moda();
@@ -336,3 +337,43 @@ footer {
 
 // Appointment
 
+.appointment-hero-image-top {
+  @height: 400px;
+  .hero-image-base('../img/grassy-rocks.jpg', @height);
+  z-index: -1;
+}
+
+.needs-validation {
+  width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0.5px #aaa;
+  background-color: white;
+  .row {
+    .col {
+      padding: 40px 50px;
+    }
+  }
+  label {
+    padding-bottom: 20px;
+  }
+}
+
+.form-group {
+  padding: 40px;
+}
+
+.form-control {
+  border: 0;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
+.submit-container, .appointment-form-container {
+  @centered-horizontal();
+}
+
+.appointment-form-container {
+  position: relative;
+  top: -250px
+}
