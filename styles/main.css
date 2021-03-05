@@ -418,4 +418,408 @@ footer .footer-column p {
   position: relative;
   top: -250px;
 }
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .btn {
+    min-width: 120px;
+    font-size: 0.9rem;
+  }
+  header #stellaLogo {
+    width: 30px;
+    height: auto;
+  }
+  header nav {
+    padding: 1rem 5rem;
+  }
+  header nav ul li {
+    padding-right: 2rem;
+  }
+  footer {
+    padding: 1.5rem 0;
+  }
+  footer .footer-column {
+    min-width: 9rem;
+    padding: 1.5rem;
+  }
+  footer .footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+  .home-hero-image-top {
+    background: url('../img/dock.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+  }
+  .home-hero-image-top .hero-image-content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 0;
+  }
+  .home-hero-image-top .hero-image-content .hero-image-heading {
+    padding-bottom: 1.5rem;
+  }
+  .home-hero-image-top .hero-image-content a {
+    margin-left: 20px;
+  }
+  .balance {
+    height: 400px;
+  }
+  .balance h3 {
+    padding-top: 60px;
+  }
+  .balance .balance-images-container .balance-image {
+    padding: 1.5rem;
+  }
+  .balance .balance-images-container .balance-image img {
+    width: auto;
+    height: 130px;
+  }
+  .home-content-container {
+    height: 500px;
+    display: flex;
+  }
+  .home-content-container .content-section {
+    padding: 20px;
+  }
+  .home-content-container .content-section .left-content {
+    width: 300px;
+    padding-top: 50px;
+  }
+  .home-content-container .content-section .right-content img {
+    width: 300px;
+  }
+  .home-hero-image-bottom {
+    background: url('../img/stones.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 250px;
+    width: auto;
+  }
+  .home-hero-image-bottom .hero-image-content {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-hero-image-bottom .hero-image-content .hero-image-heading {
+    padding-bottom: 1rem;
+  }
+  .massage-hero-image-top {
+    background: url('../img/hands.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+  }
+  .massage-hero-image-top .hero-image-content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
+  .massage-hero-image-top .hero-image-content .hero-image-heading {
+    padding-bottom: 1.5rem;
+  }
+  .massage-content-container {
+    height: 450px;
+    padding-top: 30px;
+  }
+  .massage-content-container .content-section {
+    padding: 20px;
+  }
+  .massage-content-container .content-section .left-content img {
+    width: 300px;
+    height: auto;
+  }
+  .massage-content-container .content-section .right-content {
+    width: 305px;
+    padding-top: 20px;
+  }
+  .massage-hero-image-bottom {
+    background: url('../img/massage-h.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 250px;
+    width: auto;
+  }
+  .massage-hero-image-bottom .hero-image-content {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .massage-hero-image-bottom .hero-image-content .hero-image-heading {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .massage-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+    margin: 0 0 10px 10px;
+  }
+  .stretch-hero-image-top {
+    background: url('../img/stretch-banner.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+  }
+  .stretch-hero-image-top .hero-image-content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .stretch-hero-image-top .hero-image-content .hero-image-heading {
+    padding-bottom: 1.5rem;
+  }
+  .stretch-hero-image-top .hero-image-content .hero-image-content-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .stretch-content-container {
+    height: 550px;
+    display: flex;
+    padding-top: 60px;
+  }
+  .stretch-content-container .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+  }
+  .stretch-content-container .content-section .left-content {
+    float: right;
+  }
+  .stretch-content-container .content-section .left-content img {
+    width: 300px;
+    height: auto;
+  }
+  .stretch-content-container .content-section .right-content {
+    width: 300px;
+    padding-top: 40px;
+  }
+  .stretch-hero-image-bottom {
+    background: url('../img/beach-small.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 250px;
+    width: auto;
+  }
+  .stretch-hero-image-bottom .hero-image-content {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stretch-hero-image-bottom .hero-image-content .hero-image-heading {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .stretch-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+    margin: 0 0 10px 10px;
+  }
+  .facial-hero-image-top {
+    background: url('../img/oil.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+  }
+  .facial-hero-image-top .hero-image-content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .facial-hero-image-top .hero-image-content .hero-image-heading {
+    padding-bottom: 1.5rem;
+  }
+  .facial-hero-image-top .hero-image-content .hero-image-content-wrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .facial-hero-image-bottom {
+    background: url('../img/roller.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 250px;
+    width: auto;
+  }
+  .facial-hero-image-bottom .hero-image-content {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .facial-hero-image-bottom .hero-image-content .hero-image-heading {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .facial-hero-image-bottom .hero-image-content .hero-image-content-wrapper ul li {
+    margin: 0 0 10px 10px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .header-appointment {
+    display: none;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .btn {
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+  header #stellaLogo {
+    width: 25px;
+    height: auto;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2.5rem;
+  }
+  header nav ul li {
+    padding-right: 1rem;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .footer-column {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  footer .footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+  .home-hero-image-top .hero-image-content .hero-image-heading {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+  .home-hero-image-top .hero-image-content a {
+    margin-left: 0px;
+  }
+  .balance {
+    height: 700px;
+  }
+  .balance h3 {
+    padding-top: 30px;
+  }
+  .balance .balance-images-container {
+    flex-direction: column;
+  }
+  .balance .balance-images-container .balance-image {
+    padding: 1rem;
+  }
+  .home-content-container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-content-container .content-section {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .home-content-container .content-section .left-content {
+    width: 100%;
+  }
+  .home-content-container .content-section .right-content img {
+    width: 300px;
+    height: auto;
+  }
+  .massage-content-container {
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .massage-content-container .content-section {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+  .massage-content-container .content-section .left-content {
+    float: none;
+  }
+  .massage-content-container .content-section .left-content img {
+    width: 300px;
+    height: auto;
+  }
+  .massage-content-container .content-section .right-content {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .stretch-content-container {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .stretch-content-container .content-section {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .stretch-content-container .content-section .left-content {
+    width: 100%;
+    float: right;
+  }
+  .stretch-content-container .content-section .left-content img {
+    width: 300px;
+    height: auto;
+  }
+  .stretch-content-container .content-section .right-content {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .appointment-form-container .needs-validation .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*# sourceMappingURL=main.css.map */
