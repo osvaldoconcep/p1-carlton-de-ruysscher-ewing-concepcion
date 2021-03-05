@@ -15,8 +15,14 @@ a {
 * {
   box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   @font-abril-fatface();
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.2rem;
 }
 a:hover {
   color: @color-1;
@@ -25,6 +31,7 @@ a:hover {
 // Bootstrap Overwrites
 .btn {
   padding: .75rem;
+  min-width: 150px;
   font-size: 1.2rem;
   border-radius: 0;
   @font-bodoni-moda();
@@ -40,11 +47,11 @@ a:hover {
 
 // Header
 header {
-  @centered();
+  @centered-vertical();
   nav {
     width: 100%;
     padding: 2rem 9.3rem;
-    @centered();
+    @centered-vertical();
     justify-content: space-between;
     ul {
       margin: 0;
@@ -59,15 +66,314 @@ header {
   // TODO: adjust for mobile devices
 }
 
+// Accessibility related styles
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.sr-only-focusable:focus {
+  position: relative;
+  width: auto;
+  height: auto;
+  clip: initial;
+  margin: inherit;
+  padding: inherit;
+  border: initial;
+}
+
 // Footer
+footer {
+  @centered-horizontal();
+  padding: 3rem 0;
+  .footer-column {
+    min-width: 12rem;
+    padding: 3rem;
+    h3 {
+      font-size: 20px;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      color: #333;
+    }
+  }
+  // TODO: adjust for mobile devices
+}
 
 // Home
 
+.home-hero-image-top {
+  @height: 470px;
+  .hero-image-base('../img/dock.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @centered-vertical();
+    padding: 0 0 9rem 18.75rem;
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.balance {
+  height: 500px;
+  text-align: center;
+  h3 {
+    padding-top: 80px;
+  }
+  .balance-images-container {
+    @centered-horizontal();
+    .balance-image {
+      padding: 3rem;
+      img {
+        width: auto;
+        height: 175px;
+      }
+      h4 {
+        padding-top: 20px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.home-content-container {
+  height: 700px;
+  display: flex;
+  .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    .left-content {
+      width: 305px;
+      float: right;
+      padding-top: 100px;
+    }
+    .right-content {
+      img {
+        width: 400px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.home-hero-image-bottom {
+  @height: 350px;
+  .hero-image-base('../img/stones.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @perfect-centering();
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+    .hero-image-content-wrapper {
+      text-align: center;
+    }
+  }
+}
+
 // Massage
+
+.massage-hero-image-top {
+  @height: 470px;
+  .hero-image-base('../img/hands.jpg', @height);
+  .hero-image-content {
+    color: white;
+    height: @height;
+    @centered-vertical();
+    padding-left: 18.75rem;
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.massage-content-container {
+  height: 700px;
+  display: flex;
+  padding-top: 60px;
+  .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    .left-content {
+      img {
+        width: 400px;
+        height: auto;
+      }
+      float: right;
+    }
+    .right-content {
+      width: 305px;
+      padding-top: 40px;
+    }
+  }
+}
+
+.massage-hero-image-bottom {
+  @height: 350px;
+  .hero-image-base('../img/massage-h.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @perfect-centering();
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+    .hero-image-content-wrapper {
+      ul {
+        list-style-image: url('../img/check-mark.png');
+        li {
+          margin: 0 0 16px 16px;
+        }
+      }
+    }
+  }
+}
 
 // Stretch
 
+.stretch-hero-image-top {
+  @height: 470px;
+  .hero-image-base('../img/stretch-banner.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @centered-vertical();
+    justify-content: flex-end;
+    padding: 0 9rem 0 18.75rem;
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+    .hero-image-content-wrapper {
+      text-align: right;
+      width: 500px;
+    }
+  }
+}
+
+.stretch-content-container {
+  height: 700px;
+  display: flex;
+  padding-top: 60px;
+  .content-section {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    .left-content {
+      img {
+        width: 400px;
+        height: auto;
+      }
+      float: right;
+    }
+    .right-content {
+      width: 500px;
+      padding-top: 40px;
+    }
+  }
+}
+
+.stretch-hero-image-bottom {
+  @height: 350px;
+  .hero-image-base('../img/beach-small.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @perfect-centering();
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+    .hero-image-content-wrapper {
+      ul {
+        list-style-image: url('../img/check-mark.png');
+        li {
+          margin: 0 0 16px 16px;
+        }
+      }
+    }
+  }
+}
+
 // Facial
+
+.facial-hero-image-top {
+  @height: 470px;
+  .hero-image-base('../img/oil.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @centered-vertical();
+    padding-left: 18.75rem;
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+
+.facial-hero-image-bottom {
+  @height: 350px;
+  .hero-image-base('../img/roller.jpg', @height);
+  .hero-image-content {
+    height: @height;
+    @perfect-centering();
+    .hero-image-heading {
+      padding-bottom: 2rem;
+    }
+    .hero-image-content-wrapper {
+      ul {
+        list-style-image: url('../img/check-mark.png');
+        li {
+          margin: 0 0 16px 16px;
+        }
+      }
+    }
+  }
+}
 
 // Appointment
 
+.appointment-hero-image-top {
+  @height: 400px;
+  .hero-image-base('../img/grassy-rocks.jpg', @height);
+  z-index: -1;
+}
+
+.needs-validation {
+  width: 800px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0.5px #aaa;
+  background-color: white;
+  .row {
+    .col {
+      padding: 40px 50px;
+    }
+  }
+  label {
+    padding-bottom: 20px;
+  }
+}
+
+.form-group {
+  padding: 40px;
+}
+
+.form-control {
+  border: 0;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
+.submit-container, .appointment-form-container {
+  @centered-horizontal();
+}
+
+.appointment-form-container {
+  position: relative;
+  top: -250px
+}
